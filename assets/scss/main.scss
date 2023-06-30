@@ -1,0 +1,28 @@
+// @author: Vaga Trip.
+// @design by: Vaga Trip.
+// Copyright 2022 Vaga Trip.
+
+// Global
+@import "../scss/global/fonts";
+@import "../scss/global/variables";
+@import "../scss/global/themes";
+@import "../scss/global/mixins";
+
+// Bootstrap 5x
+//@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "bootstrap.scss";
+
+@import "../scss/global/general";
+@import "../scss/global/header";
+
+// Custom Bootstrap Components
+@import "../scss/bootstrap/custom";
+
+// Generic
+@import "../scss/generic/helpers";
+@import "../scss/generic/animate";
+
+// Application widgets
+@import "../scss/widgets/card";
+@import "../scss/widgets/banner";
+@import "../scss/widgets/section";

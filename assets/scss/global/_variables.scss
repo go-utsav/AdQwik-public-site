@@ -1,0 +1,65 @@
+// @author: Vaga Trip.
+// @design by: Vaga Trip.
+// Copyright 2022 Vaga Trip.
+
+//Fonts Family
+$font-family: 		'Mulish', sans-serif;
+
+// Bootstrap colors
+$color-success:     #4DBA5E;
+$color-danger: 	    #F34161;
+$color-warning:     #FBB32D;
+$color-info: 	    #428DD1;
+$color-secondary: 	#6c757d;
+
+// more color 
+$indigos: 		    #484c7f !default;
+$purples: 		    #793997 !default;
+$oranges:           #f8b500 !default;
+$yellow:            #FFBA33 !default;
+$greens:            #7EB93F !default;
+$blues:	            #0d6efd !default;
+$blush:             #ED5782 !default;
+$cyans:	            #00bdaa !default;
+$reds:	 			#FF1843 !default;
+$info:		        #4FB8C9 !default;
+$white:		        #ffffff !default;
+$dark:		        #191818 !default;
+
+// scss-docs-start colors-map
+$c_colors: (
+    "blue":         $blues,
+    "blush":        $blush,
+    "indigo":       $indigos,
+    "purple":       $purples,
+    "red":          $reds,
+    "orange":       $oranges,
+    "yellow":       $yellow,
+    "green":        $greens,
+    "cyan":         $cyans,
+) !default;
+
+$color-facebook:     #365397;
+$color-behance:      #053eff;
+$color-envato:       #82b541;
+$color-twitter:      #00a9f1;
+$color-linkedin:     #006db3;
+$color-vimeo:        #48b6ed;
+$color-pinterest:    #ce1a19;
+$color-dribbble:     #ed4584;
+$color-skype:        #00acf4;
+$color-instagram:    #396d9a;
+
+// Breakpoints
+$break-sm: 		    567px;
+$break-xsmall: 		640px;
+$break-767: 		767px;
+$break-small: 		768px;
+$break-991: 		991px;
+$break-medium: 		992px;
+$break-1024: 		1024px;
+$break-1199: 		1199px;
+$break-large: 		1200px;
+$break-1279: 		1279px;
+$break-1280: 		1280px;
+$break-xlarge: 		1440px;

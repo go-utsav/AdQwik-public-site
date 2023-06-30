@@ -1,0 +1,83 @@
+// @author: Vaga Trip.
+// @design by: Vaga Trip.
+// Copyright 2022 Vaga Trip.
+
+.banner-section {
+    padding-top: 70px;
+    padding-bottom: 110px;
+    overflow: hidden;
+
+    @include media-breakpoint-down(xl) {
+        padding-bottom: 20px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 80px;
+        padding-top: 40px;
+    }
+
+    .banner-card {
+        position: relative;
+        background: url("./../images/banner-bg.svg") center center no-repeat;
+        background-size: cover;
+
+        @include media-breakpoint-down(xl) {
+            margin-bottom: 40px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 25px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            border: 0 !important;
+        }
+
+        >.row {
+            position: relative;
+            z-index: 9;
+        }
+
+        .banner-headline {
+            h4 {
+                color: var(--text-heading);
+            }
+
+            h3 {
+                position: relative;
+                display: inline-block;
+                margin-bottom: 0;
+
+                &::after {
+                    content: "";
+                    height: 3px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background: linear-gradient(45deg, var(--primary), var(--accent) 60%);
+                }
+            }
+        }
+
+        .banner-desp {
+            color: var(--body-text);
+            line-height: 45px;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 22px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    .banner-right {
+        img {
+            margin-bottom: -110px;
+            margin-top: 26px;
+            @include media-breakpoint-down(md) {
+                margin-top: 0;
+            }
+        }
+    }
+}

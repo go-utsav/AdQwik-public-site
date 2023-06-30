@@ -1,0 +1,142 @@
+// @author: Vaga Trip.
+// @design by: Vaga Trip.
+// Copyright 2022 Vaga Trip.
+
+// bootstrap class overwrite css
+.border,
+.border-top,
+.border-right,
+.border-end,
+.border-bottom,
+.border-left,
+.border-start,
+.dropdown-divider,
+.input-group-text {
+    border-color: var(--border-color) !important;
+}
+
+.form-floating {
+    >textarea {
+        &.form-control {
+            height: 120px;
+        }
+    }
+	>.form-control {
+		&:focus {
+			~ {
+				label {
+					opacity: 1;
+					transform: scale(0.85) translateY(0.075rem) translateX(0.15rem);
+					background-color: var(--card-color);
+					height: auto;
+                    padding: 0.4rem .75rem;
+                    border-radius: .375rem;
+				}
+			}
+		}
+		&:not(:placeholder-shown) {
+			~ {
+				label {
+					opacity: 1;
+					transform: scale(0.85) translateY(0.075rem) translateX(0.15rem);
+					background-color: var(--card-color);
+					height: auto;
+                    padding: 0.4rem .75rem;
+                    border-radius: .375rem;
+				}
+			}
+		}
+	}
+	>.form-control-plaintext,
+	>.form-select {
+		~ {
+			label {
+				opacity: 1;
+				transform: scale(0.85) translateY(0.075rem) translateX(0.15rem);
+				background-color: var(--card-color);
+				height: auto;
+                padding: 0.4rem .75rem;
+                border-radius: .375rem;
+			}
+		}
+	}
+}
+
+// bottom
+.btn {
+    transition: box-shadow .25s ease,
+    transform .25s ease;
+
+    &:focus,
+    &:hover{
+        box-shadow: 0 6px 1rem rgba($dark,.1),0 .5rem 1rem -.75rem rgba($dark,.1)!important;
+        transform: translate3d(0,-3px,0)
+    }
+
+    &.btn-border {
+        background-color: var(--border-color);
+        color: var(--text-heading);
+        border-color: var(--border-color);
+        
+        &:hover {
+            background-color: var(--text-heading);
+            color: $white;
+            border-color: var(--text-heading);
+        }
+    }
+
+    &.btn-white {
+        background-color: var(--color-fff);
+        border-color: var(--color-fff);
+        color: var(--color-700);
+    }
+
+    &.btn-dark {
+        background-color: var(--color-000);
+        border-color: var(--color-000);
+        color: var(--color-400);
+    }
+
+    &.btn-heading {
+        background-color: var(--text-heading);
+        border-color: var(--text-heading);
+        color: var(--body-color);
+        &:active {
+            background-color: var(--text-heading);
+            border-color: var(--text-heading);
+            color: var(--body-color);
+        }
+    }
+
+    &.btn-lg {
+        padding: .89rem 1rem;
+    }
+}
+
+button {
+    &:focus {
+        &:not(:focus-visible) {
+            box-shadow: none;
+        }
+    }
+}
+
+// avatar
+.avatar {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+}
+
+// dropdown menu
+.dropdown-menu {
+
+    .dropdown-item:hover,
+    .dropdown-item:focus,
+    .dropdown-item.active {
+        background-color: rgba(var(--primary-rgb), 0.15);
+        color: var(--primary-color);
+    }
+}

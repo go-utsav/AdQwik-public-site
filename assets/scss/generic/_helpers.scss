@@ -1,0 +1,242 @@
+﻿// @author: Vaga Trip.
+// @design by: Vaga Trip.
+// Copyright 2022 Vaga Trip.
+
+// Text Color
+.text-body {
+    color: var(--body-text) !important;
+}
+
+.text-dark-body {
+    color: var(--body-dark-text) !important;
+}
+
+.text-heading {
+    color: var(--text-heading) !important;
+}
+
+.text-card {
+    color: var(--card-color) !important;
+}
+
+.text-dark-card {
+    color: var(--card-dark-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.color-fff {
+    color: var(--color-fff);
+}
+
+.color-400 {
+    color: var(--color-400);
+}
+
+.color-600 {
+    color: var(--color-600);
+}
+
+.color-700 {
+    color: var(--color-700);
+}
+
+.color-900 {
+    color: var(--color-900);
+}
+
+// Text Gradient
+.text-primary-gradient {
+    background: linear-gradient(45deg, var(--primary), var(--accent) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// Background 
+.bg-primary {
+    background: var(--primary-color) !important;
+}
+
+.bg-secondary {
+    background: var(--secondary-color) !important;
+}
+
+.bg-dark {
+    background: var(--color-000) !important;
+}
+
+.bg-light {
+    background: var(--color-200) !important;
+}
+
+.bg-body {
+    background: var(--body-color) !important
+}
+
+.bg-body-font {
+    background: var(--body-text) !important
+}
+
+.bg-card {
+    background: var(--card-color) !important
+}
+
+.bg-border {
+    background-color: var(--border-color) !important;
+}
+
+.bg-muted {
+    background-color: var(--text-muted) !important;
+}
+
+.bg-heading {
+    background-color: var(--text-heading) !important;
+}
+
+// Border
+.border-fff {
+    border-color: #fff !important;
+}
+
+.border-heading {
+    border-color: var(--text-heading) !important;
+}
+
+.border-body-font {
+    border-color: var(--body-text) !important;
+}
+
+// Button
+.btn-success {
+    background-color: $color-success;
+    border-color: $color-success;
+}
+
+.btn-danger {
+    background-color: $color-danger;
+    border-color: $color-danger;
+}
+
+.btn-warning {
+    background-color: $color-warning;
+    border-color: $color-warning;
+}
+
+.btn-info {
+    background-color: $color-info;
+    border-color: $color-info;
+}
+
+.btn-mobile {
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}
+
+// Height
+.vh100 {
+    height: 100vh;
+}
+
+// padding
+.pt-60 {
+    padding-top: 60px !important;
+}
+
+.pb-60 {
+    padding-bottom: 60px !important;
+}
+
+
+// Font Size
+.font-body {
+    font-size: 16px !important;
+}
+
+.font-12 {
+    font-size: 12px !important;
+    line-height: 16px;
+}
+
+.font-14 {
+    font-size: 14px !important;
+}
+
+.font-18 {
+    font-size: 18px !important;
+}
+
+.font-40 {
+    font-size: clamp(25px, 3vw, 40px) !important;
+}
+
+.font-60 {
+    font-size: clamp(30px, 4vw, 60px) !important;
+}
+
+.fw-900 {
+    font-weight: 900 !important;
+}
+
+// Line Height
+.lh-26 {
+    line-height: 26px;
+}
+
+.lh-30 {
+    line-height: 30px;
+}
+
+.lh-32 {
+    line-height: 32px !important;
+}
+
+.lh-35 {
+    line-height: 35px !important;
+}
+
+.lh-40 {
+    line-height: 40px !important;
+
+    @include media-breakpoint-down(lg) {
+        line-height: 30px !important;
+    }
+}
+
+.lh-45 {
+    line-height: 45px !important;
+
+    @include media-breakpoint-down(lg) {
+        line-height: 35px !important;
+    }
+}
+
+.lh-50 {
+    line-height: 50px !important;
+
+    @include media-breakpoint-down(lg) {
+        line-height: 40px !important;
+    }
+}
+
+.lh-75 {
+    line-height: 75px !important;
+
+    @include media-breakpoint-down(lg) {
+        line-height: 60px !important;
+    }
+
+    @include media-breakpoint-down(md) {
+        line-height: 40px !important;
+    }
+}

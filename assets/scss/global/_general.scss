@@ -1,0 +1,127 @@
+// @author: Vaga Trip.
+// @design by: Vaga Trip.
+// Copyright 2022 Vaga Trip.
+
+body {
+    @include transition(ease .2s);
+    background-color: var(--body-color);
+    color: var(--body-text);
+    font-family: $font-family;
+    direction: ltr;
+    line-height: 20px;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: var(--accent) !important;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+// for card layout height
+.row-deck {
+
+    >.col,
+    >[class*='col-'] {
+        display: flex;
+        align-items: stretch;
+
+        .card {
+            flex: 1 1 auto;
+        }
+    }
+}
+
+.accordion-item {
+    margin-bottom: 8px;
+}
+.accordion-button {
+    font-size: 1.25rem;
+    padding: 1.5rem;
+    color: var(--body-text);
+    border-radius: 1rem !important;
+    border: 1px solid var(--body-color) !important;
+
+    &:not(.collapsed) {
+		background-color: var(--body-color);
+        color: var(--body-text);
+		box-shadow: none;
+        border-radius: 1rem 1rem 0 0 !important;
+        &::after {
+            background-image: var(--bs-accordion-btn-icon);
+        }
+	}
+}
+
+.accordion-body {
+    font-size: 18px;
+}
+.accordion-collapse {
+    background-color: var(--body-color);
+    color: var(--body-text);
+    border-top: 1px solid var(--color-fff) !important;
+    border-radius: 0 0 1rem 1rem;
+}
+.accordion-flush .accordion-item {
+    border: none;
+}
+
+ul.check-list {
+    li {
+        padding: 10px 0;
+        span {
+            width: calc(100% - 18px);
+        }
+    }
+}
+
+.section-fun-fact {
+    .fun-fact-list {
+        .col-md-3.col-sm-6 {
+            .fun-box {
+                position: relative;
+                &::before {
+                    content: "";
+                    height: 50%;
+                    width: 1px;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    background-color: var(--border-color);
+                    @include media-breakpoint-down(md) {
+                        width: 50%;
+                        height: 1px;
+                        top: auto;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%,1px);
+                    }
+                }
+            }
+            &:first-child {
+                .fun-box {
+                    &::before {
+                        display: none;
+                        @include media-breakpoint-down(md) {
+                            display: block;
+                            width: 50%;
+                            height: 1px;
+                            top: auto;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translate(-50%,0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.f-tiny {
+    font-size: 2px;
+}
