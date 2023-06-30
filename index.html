@@ -53,9 +53,7 @@
                             <li class="nav-item nav-font-style">
                                 <a class="nav-link" href="/about"> About Us</a>
                             </li>
-                            <li class="nav-item nav-font-style">
-                                <a class="nav-link" href="/blogs">Blogs </a>
-                            </li>
+
                             <!-- <li class="nav-item nav-font-style">
                             <a class="nav-link " href="https://play.google.com/store/apps/details?id=com.apps.vaga"
                                 target="_blank">
@@ -81,6 +79,9 @@
     <!-- navigation bar ends -->
 
     <!-- Body content start -->
+    <div class="section">
+
+    </div>
 
     <!-- Body Content Ends -->
 
@@ -92,10 +93,12 @@
                 <div class="col-lg-4 col-md-12">
                     <div class="d-flex flex-column h-100">
                         <div class="logo-txt pe-lg-4 flex-grow-1">
-                            <a class="d-inline-block" href="/"><img style="max-height: 50px; height:100px !important; width:100%" 
-                                    src="images/logo.png" alt="AdQwik-logo" /></a>
+                            <a class="d-inline-block" href="/"><img
+                                    style="max-height: 50px; height:100px !important; width:100%" src="images/logo.png"
+                                    alt="AdQwik-logo" /></a>
                             <p class="font-18 lh-30 fw-normal mt-4">
-                                Hub for Marketing Portals
+                                Add Kick with AdQwik.<br>
+                                The one hub of all Advertisement
 
                             </p>
                         </div>
@@ -147,8 +150,7 @@
                                 </a>
                             </li>
                             <li class="me-3">
-                                <a class="text-muted" href="https://www.linkedin.com/company/AdQwik/"
-                                    target="_blank">
+                                <a class="text-muted" href="https://www.linkedin.com/company/AdQwik/" target="_blank">
                                     <svg width="31" height="31" viewBox="0 0 21 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -233,34 +235,33 @@
                     </h5>
                     <div class="d-flex flex-column mt-4">
                         <p class="font-18 lh-35 fw-light mb-4">
-                            <a class="d-block text-body"
-                                href="mailto:{{setting('site.site_email')}}"></a>
-                            <a class="mt-2 d-block text-body"
-                                href="tel:{{setting('site.site_phone_no')}}"></a>
+                            <a class="d-block text-body" href="mailto: contact@adqwik.com">contact@adqwik.com</a>
+                            <a class="mt-2 d-block text-body" href="tel:7046662738"> +91 7046662738</a>
                         </p>
                         <p class="font-18 lh-32 fw-light mt-4 mt-md-0 mb-4 mb-md-0">
-                            SMAYAN PROJECTS LLP <br>
-                            D-506, Swati Clover, Shilaj Crossroad,
-                            Ahmedabad 380059 ( India ).
+                            ADQWIK MARKETING SOLUTION PVT. LTD. <br>
+                            703 B1, West Gate Business Bay,
+                            SG Highway, Ahmedabad 380059 (India).
                         </p>
                     </div>
                 </div>
-                <!-- <div class="col-12">
+                <div class="col-12">
                     <div class="f-bottom">
                         <div class="d-flex flex-wrap justify-content-between align-items-center py-4">
                             <p class="mb-sm-0 text-muted">
-                                © {{\Carbon\Carbon::now()->year}} <a class="text-ttm-blue" href="#">VAGA</a> All Rights
+                                © 2023<a class="text-ttm-blue" href="#">AdQwik</a> All Rights
                                 Reserved.
                             </p>
                             <ul class="list-unstyled mb-0 d-flex">
-                                @foreach(\TCG\Voyager\Models\Page::where('status','ACTIVE')->get() as $footerPage)
-                                <li @if (!$loop->first) class="ms-3" @endif><a class="text-muted "
-                                        href="/{{$footerPage->slug}}">{{$footerPage->title}}</a></li>
-                                @endforeach
+                                
+                                <li class="ms-3" ><a class="text-muted "
+                                        href="privacypolicy.html">Privacy Policy</a></li>
+                                <li class="ms-3" ><a class="text-muted "
+                                            href="termsofuse.html">Terms of Use</a></li>
                             </ul>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </footer>

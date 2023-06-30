@@ -10276,7 +10276,7 @@ footer {
     border-image-slice: 2;
 }
 footer .f-bottom > div {
-    border-top: 2px solid #ffffff;
+    border-top: 2px solid orange !important;
 }
 .f-tiny {
     font-size: 8px;
